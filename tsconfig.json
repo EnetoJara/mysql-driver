@@ -1,0 +1,63 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "es5",
+        "composite": true,
+        "module": "commonjs",
+        "lib": [
+            "esnext",
+            "ES2015",
+            "ES2016",
+            "ES2017",
+            "ES2018",
+            "ES2019"
+        ],
+        "allowJs": false,
+        "checkJs": false,
+        "jsx": "preserve",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "tsBuildInfoFile": "./lib/tsBuildInfoFile.json",
+        "isolatedModules": true,
+        "moduleResolution": "node",
+        "baseUrl": "./node_modules",
+        "importHelpers": true,
+        "noImplicitAny": true,
+        "removeComments": false,
+        "noImplicitReturns": true,
+        "alwaysStrict": true,
+        "assumeChangesOnlyAffectDirectDependencies": true,
+        "allowUnusedLabels": false,
+        "paths": {
+            "*": [
+                "./*",
+                "./@types/*"
+            ],
+        },
+        "types": [
+            "node",
+            "mysql"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": false,
+        "skipLibCheck": false,
+        "forceConsistentCasingInFileNames": true,
+        "pretty": true,
+        "importsNotUsedAsValues": "error",
+        "stripInternal": true,
+        "strictNullChecks": true,
+        "newLine": "lf",
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+    },
+    "exclude": [
+        "node_modules",
+    ],
+    "include": [
+        "./src/*.ts",
+        "./src/**/*.ts"
+    ]
+}
